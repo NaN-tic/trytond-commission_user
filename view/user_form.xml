@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- This file is part of commission_user module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id='preferences']/field[@name='language']"
+            position="after">
+        <label name="agent"/>
+        <field name="agent" widget="selection"/>
+    </xpath>
+    <xpath expr="/form/notebook/page[@id='preferences']"
+            position="after">
+        <page string="Agents" col="2" id="agents">
+            <field name="agents"/>
+        </page>
+    </xpath>
+</data>
