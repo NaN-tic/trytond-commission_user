@@ -6,10 +6,10 @@ from trytond.pool import PoolMeta
 from trytond.pyson import Eval
 
 __all__ = ['User']
-__metaclass__ = PoolMeta
 
 
 class User:
+    __metaclass__ = PoolMeta
     __name__ = "res.user"
     agents = fields.Many2Many('agent.user', 'user', 'agent', 'Agents')
     agent = fields.Many2One('commission.agent', 'Agent', domain=[
